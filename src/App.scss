@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.App {
+  min-height: 100%;
+  overflow: hidden;
+  font-style: normal;
+  background: #ffffff;
+  color: #000000;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 175%;
+  position: relative;
+  z-index: 1;
+  padding: 15px 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message-result {
+  margin: 0 auto;
+  width: max-content;
+  text-align: right;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  display: flex;
+  background: #ffffff;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(100%, 0);
+
+  @media (max-width: 600px) {
+    width: calc(100% - 40px);
+    transform: translate(0, 100%);
+    text-align: center;
+  }
+
+  &.show {
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+}

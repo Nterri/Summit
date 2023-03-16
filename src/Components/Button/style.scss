@@ -1,0 +1,28 @@
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #656363;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #969696;
+  }
+
+  &.red {
+    background: #ff5858;
+
+    &:hover {
+      background: #ff8e8e;
+    }
+  }
+
+  &.blue {
+    background: #586eff;
+
+    &:hover {
+      background: #8ea1ff;
+    }
+  }
+}
